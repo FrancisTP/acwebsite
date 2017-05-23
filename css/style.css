@@ -1,0 +1,177 @@
+/*RESET STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+body,
+h1,
+ul {
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.toggle-menu {
+  box-shadow: none;
+  background: transparent;
+  border: 0;
+}
+
+body {
+  background: #f1f1f1;
+  color: #272626;
+  font: normal 20px/1.6 "Noto Sans", sans-serif;
+}
+
+
+/* HEADER STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+header {
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0px;
+  box-sizing: border-box;
+  background: #DD3543;
+}
+
+nav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  transition: align-items .2s;
+}
+
+.logo {
+  font-size: 2rem;
+  display: inline-block;
+  margin: 0 0 0 25px;
+  transition: all .2s;
+}
+
+ul {
+  display: flex;
+  margin: 50px 50px 0 0;
+  padding: 0;
+  transition: margin .2s;
+}
+
+li:not(:last-child) {
+  margin-right: 20px;
+}
+
+li a {
+  display: block;
+  padding: 10px 20px;
+}
+
+.toggle-menu {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+  margin: 10px 10px 0 0;
+  transition: margin .2s;
+}
+
+#logoTitleAC {
+  margin-bottom: 0em;
+}
+
+#logoTitleB {
+  margin-top:0em; 
+  padding-left:6em;
+}
+
+#navSelection:hover {
+  background: #9A1823;
+}
+
+
+/* MAIN STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+main {
+  display: block;
+  padding: 0 20px;
+}
+
+
+/* STYLES FOR THE "scroll" CLASS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.scroll .logo {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+}
+
+.scroll nav {
+  align-items: flex-end;;
+}
+
+.scroll .logo,
+.scroll ul,
+.scroll .toggle-menu {
+  margin: 0;
+}
+
+.scroll #logoTitleAC,
+.scroll #logoTitleB {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  padding-left: 0em;
+}
+
+
+/* MQ STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 1060px) {
+  header {
+    padding: 10px;
+  }
+  nav {
+    align-items: center;
+  }
+  ul {
+    display: none;
+  }
+  .logo {
+    font-size: 1.8rem;
+    margin: 10px 0 0 10px;
+  }
+  .toggle-menu {
+    display: block;
+  }
+  #logoTitleAC, #logoTitleB {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    padding-left: 0em;
+  }
+}
+
+
+/* STYLES FOR THE COUNTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.counter {
+  visibility: hidden;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1px;
+  padding: 5px;
+  color: #fff;
+  background: #DD3543;
+}
